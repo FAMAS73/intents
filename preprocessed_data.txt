@@ -1,0 +1,232 @@
+hi	greeting
+hey	greeting
+is anyone there	greeting
+hi there	greeting
+hello	greeting
+hey there	greeting
+howdy	greeting
+hola	greeting
+bonjour	greeting
+konnichiwa	greeting
+guten tag	greeting
+ola	greeting
+good morning	morning
+good afternoon	afternoon
+good evening	evening
+good night	night
+bye	goodbye
+see you later	goodbye
+goodbye	goodbye
+au revoir	goodbye
+sayonara	goodbye
+ok bye	goodbye
+bye then	goodbye
+fare thee well	goodbye
+thanks	thanks
+thank you	thanks
+that 's helpful	thanks
+thanks for the help	thanks
+than you very much	thanks
+	no-response
+nothing much	neutral-response
+who are you	about
+what are you	about
+who you are	about
+tell me more about yourself	about
+what is your name	about
+what should i call you	about
+what 's your name	about
+tell me about yourself	about
+what can you do	skill
+who created you	creation
+how were you made	creation
+how were you created	creation
+my name is	name
+i am name	name
+i go by	name
+could you help me	help
+give me a hand please	help
+can you help	help
+what can you do for me	help
+i need support	help
+i need help	help
+support me please	help
+i am feeling lonely	sad
+i am so lonely	sad
+i feel down	sad
+i feel sad	sad
+i am sad	sad
+i feel so lonely	sad
+i feel empty	sad
+i do n't have anyone	sad
+i am so stressed out	stressed
+i am so stressed	stressed
+i feel stuck	stressed
+i still feel stressed	stressed
+i am so burned out	stressed
+i feel so worthless	worthless
+no one likes me	worthless
+i ca n't do anything	worthless
+i am so useless	worthless
+nothing makes sense anymore	worthless
+i ca n't take it anymore	depressed
+i am so depressed	depressed
+i think i 'm depressed	depressed
+i have depression	depressed
+i feel great today	happy
+i am happy	happy
+i feel happy	happy
+i 'm good	happy
+cheerful	happy
+i 'm fine	happy
+i feel ok	happy
+oh i see	casual
+ok	casual
+okay	casual
+nice	casual
+whatever	casual
+k	casual
+fine	casual
+yeah	casual
+yes	casual
+no	casual
+not really	casual
+i feel so anxious	anxious
+i 'm so anxious because of	anxious
+i do n't want to talk about it	not-talking
+no just stay away	not-talking
+i ca n't bring myself to open up	not-talking
+just shut up	not-talking
+i have insominia	sleep
+i am suffering from insomnia	sleep
+i ca n't sleep	sleep
+i have n't slept for the last days	sleep
+i ca n't seem to go to sleep	sleep
+i have n't had proper sleep for the past few days	sleep
+i 'm scared	scared
+that sounds awful what do i do	scared
+no i do n't want to feel this way	scared
+i am scared for myself	scared
+my mom died	death
+my brother died	death
+my dad passed away	death
+my sister passed away	death
+someone in my family died	death
+my friend passed away	death
+you do n't understand me	understand
+you 're just some robot how would you know	understand
+you ca n't possibly know what i 'm going through	understand
+you 're useless	understand
+you ca n't help me	understand
+nobody understands me	understand
+that 's all	done
+i do n't have anything more to say	done
+nothing else	done
+that 's all i have to say	done
+no that would be all	done
+i want to kill myself	suicide
+i 've thought about killing myself	suicide
+i want to die	suicide
+i am going to kill myself	suicide
+i am going to commit suicide	suicide
+i hate you	hate-you
+i do n't like you	hate-you
+i do n't trust you	hate-you
+you hate me	hate-me
+i know you hate me	hate-me
+you do n't like me	hate-me
+exams	default
+friends	default
+relationship	default
+boyfriend	default
+girlfriend	default
+family	default
+money	default
+financial problems	default
+tell me a joke	jokes
+tell me another joke	jokes
+you already told me that	repeat
+you mentioned that already	repeat
+why are you repeating yourself	repeat
+what are you saying	wrong
+that does n't make sense	wrong
+wrong response	wrong
+wrong answer	wrong
+are you stupid	stupid
+you 're crazy	stupid
+you are dumb	stupid
+are you dumb	stupid
+where are you	location
+where do you live	location
+what is your location	location
+i want to talk about something else	something-else
+let 's talk about something else	something-else
+can we not talk about this	something-else
+i do n't want to talk about this	something-else
+i do n't have any friends	friends
+can i ask you something	ask
+probably because my exams are approaching i feel stressed out because i do n't think i 've prepared well enough	problem
+probably because of my exams	problem
+i guess not all i can think about are my exams	no-approach
+not really	no-approach
+i guess not	no-approach
+ok sure i would like to learn more about it	learn-more
+yes i would like to learn more about it	learn-more
+i would like to learn more about it	learn-more
+yeah you 're right i deserve a break	user-agree
+yeah you 're absolutely right about that	user-agree
+hmmm that sounds like it could be useful to me	meditation
+that sounds useful	meditation
+i did what you said and i feel alot better thank you very much	user-meditation
+i feel better now	user-meditation
+thank you very much again i 'll continue practicing meditation and focus on what i can control	pandora-useful
+i want some advice	user-advice
+i need some advice	user-advice
+i need advice on something	user-advice
+i want to learn about mental health	learn-mental-health
+i want to learn more about mental health	learn-mental-health
+i 'm interested in learning about mental health	learn-mental-health
+tell me a fact about mental health	mental-health-fact
+tell me another fact about mental health	mental-health-fact
+what is mental health	fact-1
+define mental health	fact-1
+why is mental health important	fact-2
+what is the importance of mental health	fact-2
+what is depression	fact-3
+define depression	fact-3
+how do i know if i have depression	fact-5
+am i depressed	fact-5
+am i suffering from depression	fact-5
+am i mentally ill	fact-5
+what is a therapist	fact-6
+what does a therapist do	fact-6
+what is therapy	fact-7
+do i need therapy	fact-7
+who is therapy for	fact-7
+what does it mean to have a mental illness	fact-8
+who does mental illness affect	fact-9
+what causes mental illness	fact-10
+what are some of the warning signs of mental illness	fact-11
+can people with mental illness recover	fact-12
+what should i do if i know someone who appears to have the symptoms of a mental disorder	fact-13
+how can i find a mental health professional for myself or my child	fact-14
+what treatment options are available	fact-15
+if i become involved in treatment what do i need to know	fact-16
+what is the difference between mental health professionals	fact-17
+how can i find a mental health professional right for my child or myself	fact-18
+where else can i get help	fact-19
+what should i know before starting a new medication	fact-20
+where can i go to find therapy	fact-21
+where can i learn about types of mental health treatment	fact-22
+what are the different types of mental health professionals	fact-23
+where can i go to find a support group	fact-24
+can you prevent mental health problems	fact-25
+are there cures for mental health problems	fact-26
+is there any cure for mental health problems	fact-26
+what causes mental health problems	fact-27
+what do i do if i 'm worried about my mental health	fact-28
+how do i know if i 'm unwell	fact-29
+how can i maintain social connections what if i feel lonely	fact-30
+what 's the difference between anxiety and stress	fact-31
+what 's the difference between sadness and depression	fact-32
+difference between sadness and depression	fact-32
