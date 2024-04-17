@@ -1,10 +1,19 @@
 import json
 import numpy as np
 import tensorflow as tf
+import pandas as pd
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, Embedding, LSTM, Dense, Dropout, LayerNormalization
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+
+# Step 1: Load and preprocess the dataset
+with open("preprocessed_dataset.json", "r") as file:
+    data = json.load(file)
+
+df = pd.DataFrame(data['intents'])
+df
 
 # Step 1: Load and preprocess the dataset
 with open("preprocessed_dataset.json", "r") as file:
@@ -59,17 +68,45 @@ model.compile(optimizer='adam', loss="sparse_categorical_crossentropy", metrics=
 # Step 5: Train the model
 history = model.fit(X, y, epochs=50, batch_size=16, validation_split=0.2)
 
-# Step 6: Evaluate the model
-loss, accuracy = model.evaluate(X, y)
-print("Test Loss:", loss)
-print("Test Accuracy:", accuracy)
+import matplotlib.pyplot as plt
 
-# Step 7: Save the trained model
+# Evaluate the model
+loss, accuracy = model.evaluate(X, y)
+print("Validation Loss:", loss)
+print("Validation Accuracy:", accuracy)
+
+# Plot training and validation loss
+plt.plot(history.history['loss'], label='Training Loss')
+plt.plot(history.history['val_loss'], label='Validation Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.title('Training and Validation Loss')
+plt.legend()
+plt.show()
+
+# Plot training and validation accuracy
+plt.plot(history.history['accuracy'], label='Training Accuracy')
+plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.title('Training and Validation Accuracy')
+plt.legend()
+plt.show()
+
+# Step 6: Save the trained model
 model.save("intent_model.h5")
 
 # Save the tokenizer
 with open('tokenizer.json', 'w') as f:
     f.write(tokenizer.to_json())
+
+with open('labels.txt', 'w') as f:
+    for label, idx in label2idx.items():
+        f.write(f"{idx}: {label}\n")
+      
+# Save the word index to JSON
+with open('word_index.json', 'w') as f:
+    json.dump(tokenizer.word_index, f)
 
 
 # Step 8: Convert the model to TensorFlow Lite format
@@ -81,7 +118,6 @@ tflite_model = converter.convert()
 # Save the TFLite model to a file
 with open('intent_model.tflite', 'wb') as f:
     f.write(tflite_model)
-
 
 
 
